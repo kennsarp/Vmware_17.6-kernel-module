@@ -35,6 +35,6 @@ Before running the script, ensure that you have:
 
 1. Clone this repository and make the script executable:
    ```bash
-   git clone https://github.com/yourusername/yourrepo.git
-   cd yourrepo
-   chmod +x install_vmware.sh
+   git clone https://github.com/kennsarp/Vmware_17.6-kernel-module.git
+   cd Vmware_17.6-kernel-module
+   chmod +x Vmware-sign.sh
