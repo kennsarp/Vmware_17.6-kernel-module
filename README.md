@@ -23,7 +23,7 @@ Before running the script, ensure that you have:
    After installation, the script automatically downloads the appropriate VMware host modules and rebuilds them using the [bytium/vm-host-modules](https://github.com/bytium/vm-host-modules) repository.
 
 4. **Secure Boot Signing (Optional)**  
-   If Secure Boot is enabled, the script generates signing keys and signs the VMware kernel modules (`vmmon` and `vmnet`) to ensure that they load correctly on boot. The [Reddit post](https://www.reddit.com/r/Fedora/comments/1fnhfzd/fedora_40_host_with_vmware_workstation_pro_176/) provided valuable insights into solving this Secure Boot issue.
+   If Secure Boot is enabled, the script generates signing keys and signs the VMware kernel modules (`vmmon` and `vmnet`) to ensure that they load correctly on boot. This [Reddit post](https://www.reddit.com/r/Fedora/comments/1fnhfzd/fedora_40_host_with_vmware_workstation_pro_176/) provided valuable insights into solving this Secure Boot issue.
 
 5. **Key Enrollment**  
    The script prompts you to import the signing key using `mokutil` and explains how to enroll it during system boot.
@@ -38,3 +38,8 @@ Before running the script, ensure that you have:
    git clone https://github.com/kennsarp/Vmware_17.6-kernel-module.git
    cd Vmware_17.6-kernel-module
    chmod +x Vmware-sign.sh
+2. ```bash
+   ./Vmware-sign.sh
+3. Follow any prompts, especially if Secure Boot is enabled, to enroll the key after reboot.
+
+
