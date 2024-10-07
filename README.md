@@ -7,7 +7,7 @@ This repository contains a bash script to automate the installation of VMware Wo
 ## Prerequisites
 
 Before running the script, ensure that you have:
-- Fedora 40 or later
+- Fedora 40
 - VMware Workstation Pro 17.6 bundle file downloaded to `~/Downloads/`
 - Administrative privileges (sudo)
 
